@@ -1,0 +1,190 @@
+[
+  {
+    "id": "1",
+    "basicInfo": {
+      "name": "Kafka",
+      "slug": "kafka",
+      "rarity": "5-star",
+      "path": "Nihility",
+      "element": "Lightning",
+      "gender": "Female",
+      "affiliation": "Stellaron Hunters",
+      "releaseDate": "2023-08-09",
+      "description": "A member of the Stellaron Hunters, Kafka is a captivating and dangerous woman who enjoys collecting coats. Her past is shrouded in mystery, and she is one of the most wanted individuals in the galaxy.",
+      "imagePortraitUrl": "/images/kafka-portrait.webp",
+      "imageFullBodyUrl": "/images/kafka-fullbody.webp"
+    },
+    "baseStats": {
+      "hp": 1280,
+      "atk": 756,
+      "def": 504,
+      "spd": 102,
+      "critRate": 0.05,
+      "critDamage": 0.50,
+      "breakEffect": 0.0,
+      "energyRegenerationRate": 1.00,
+      "effectHitRate": 0.0,
+      "effectRes": 0.0,
+      "healingBoost": 0.0,
+      "elementalDamageBoost": {
+        "Lightning": 0.18
+      }
+    },
+    "skills": [
+      {
+        "id": 101,
+        "type": "Basic Attack",
+        "name": "Midnight Tumult",
+        "description": "Deals Lightning DMG equal to 50% of Kafka's ATK to a single enemy.",
+        "iconUrl": "https://www.prydwen.gg/static/dec7daebd67d260a6cca41705c4615fd/83fe9/stat_atk.png",
+        "scaling": ["ATK: 50%"]
+      },
+      {
+        "id": 102,
+        "type": "Skill",
+        "name": "Caressing Moonlight",
+        "description": "Deals Lightning DMG equal to 80% of Kafka's ATK to a single enemy and Lightning DMG equal to 30% of Kafka's ATK to adjacent enemies. If the target enemy is currently afflicted with DoT, all currently applied DoTs immediately deal DMG equal to 60% of their original DMG.",
+        "iconUrl": "https://www.prydwen.gg/static/dec7daebd67d260a6cca41705c4615fd/83fe9/stat_atk.png",
+        "scaling": ["ATK: 80%", "ATK: 30%", "DoT DMG: 60%"]
+      },
+      {
+        "id": 103,
+        "type": "Ultimate",
+        "name": "Twilight Trill",
+        "description": "Deals Lightning DMG equal to 120% of Kafka's ATK to all enemies, and immediately triggers all currently applied DoTs to deal DMG equal to 80% of their original DMG. Additionally, applies Shock to all enemies, lasting for 2 turns.",
+        "iconUrl": "https://www.prydwen.gg/static/dec7daebd67d260a6cca41705c4615fd/83fe9/stat_atk.png",
+        "scaling": ["ATK: 120%", "DoT DMG: 80%"]
+      },
+      {
+        "id": 104,
+        "type": "Talent",
+        "name": "Gentle Whisper",
+        "description": "After an ally uses their Basic Attack on an enemy, Kafka immediately launches a follow-up attack, dealing Lightning DMG equal to 75% of her ATK to that enemy and applying Shock to them, lasting for 2 turns. This effect can only be triggered once per turn.",
+        "iconUrl": "https://www.prydwen.gg/static/dec7daebd67d260a6cca41705c4615fd/83fe9/stat_atk.png",
+        "scaling": ["ATK: 75%"]
+      },
+      {
+        "id": 105,
+        "type": "Technique",
+        "name": "Mercy Is Not Forgiveness",
+        "description": "Immediately attacks all enemies within a set range. After entering battle, deals Lightning DMG equal to 50% of Kafka's ATK to all enemies and applies Shock to them, lasting for 2 turns.",
+        "iconUrl": "https://www.prydwen.gg/static/dec7daebd67d260a6cca41705c4615fd/83fe9/stat_atk.png",
+        "scaling": ["ATK: 50%"]
+      }
+    ],
+    "traces": [
+      {
+        "id": 201,
+        "name": "Apathetic",
+        "description": "Increases DMG dealt by Kafka's follow-up attack by 20%.",
+        "iconUrl": "https://www.prydwen.gg/static/dec7daebd67d260a6cca41705c4615fd/83fe9/stat_atk.png",
+        "statBoost": "Follow-up DMG +20%"
+      },
+      {
+        "id": 202,
+        "name": "Torture",
+        "description": "When using Skill, has a 100% base chance to increase the DoT DMG taken by the target by 15% for 2 turns.",
+        "iconUrl": "https://www.prydwen.gg/static/dec7daebd67d260a6cca41705c4615fd/83fe9/stat_atk.png",
+        "statBoost": "DoT DMG Taken +15%"
+      }
+    ],
+    "eidolons": [
+      {
+        "id": 301,
+        "level": 1,
+        "name": "Da Capo",
+        "description": "When using Skill, if the target enemy is currently afflicted with DoT, immediately triggers all currently applied DoTs to deal DMG equal to 100% of their original DMG.",
+        "iconUrl": "https://www.prydwen.gg/static/dec7daebd67d260a6cca41705c4615fd/83fe9/stat_atk.png"
+      },
+      {
+        "id": 302,
+        "level": 2,
+        "name": "Fortississimo",
+        "description": "When using Ultimate, immediately triggers all currently applied DoTs to deal DMG equal to 100% of their original DMG.",
+        "iconUrl": "https://www.prydwen.gg/static/dec7daebd67d260a6cca41705c4615fd/83fe9/stat_atk.png"
+      }
+    ],
+    "buildRecommendation": {
+      "recommendedLightCones": ["Patience Is All You Need", "Good Night and Sleep Well"],
+      "recommendedRelicSets": ["Band of Sizzling Thunder (4)", "Space Sealing Station (2)"],
+      "recommendedPlanarOrnaments": ["Space Sealing Station (2)"],
+      "mainStatsPriority": {
+        "Body": ["CRIT Rate", "ATK%"],
+        "Feet": ["SPD", "ATK%"],
+        "Planar Sphere": ["Lightning DMG Boost"],
+        "Link Rope": ["Energy Regeneration Rate", "ATK%"]
+      },
+      "subStatsPriority": ["SPD", "ATK%", "Effect Hit Rate", "CRIT Rate"],
+      "synergisticCharacters": ["Sampo", "Luka", "Serval", "Silver Wolf"],
+      "antiSynergisticCharacters": [],
+      "buildNotes": "Kafka excels in DoT (Damage over Time) teams. Prioritize SPD and ATK%. Effect Hit Rate is crucial to ensure DoTs land."
+    }
+  },
+  {
+    "id": "2",
+    "basicInfo": {
+      "name": "Jing Yuan",
+      "slug": "jing-yuan",
+      "rarity": "5-star",
+      "path": "Erudition",
+      "element": "Lightning",
+      "gender": "Male",
+      "affiliation": "Xianzhou Luofu",
+      "releaseDate": "2023-05-17",
+      "description": "One of the Seven Arbiter-Generals of the Xianzhou Alliance, and the commander of the Cloud Knights. He commands the fearsome Lightning-Lord in battle.",
+      "imagePortraitUrl": "/images/jing-yuan-portrait.webp",
+      "imageFullBodyUrl": "/images/jing-yuan-fullbody.webp"
+    },
+    "baseStats": {
+      "hp": 1164,
+      "atk": 780,
+      "def": 463,
+      "spd": 99,
+      "critRate": 0.05,
+      "critDamage": 0.50,
+      "breakEffect": 0.0,
+      "energyRegenerationRate": 1.00,
+      "effectHitRate": 0.0,
+      "effectRes": 0.0,
+      "healingBoost": 0.0,
+      "elementalDamageBoost": {
+        "Lightning": 0.18
+      }
+    },
+    "skills": [
+      {
+        "id": 106,
+        "type": "Basic Attack",
+        "name": "Glistening Light",
+        "description": "Deals Lightning DMG equal to 50% of Jing Yuan's ATK to a single enemy.",
+        "iconUrl": "https://www.prydwen.gg/static/dec7daebd67d260a6cca41705c4615fd/83fe9/stat_atk.png",
+        "scaling": ["ATK: 50%"]
+      },
+      {
+        "id": 107,
+        "type": "Skill",
+        "name": "Lightbringer",
+        "description": "Deals Lightning DMG equal to 50% of Jing Yuan's ATK to all enemies and increases Lightning-Lord's attack count by 2 for the next turn.",
+        "iconUrl": "https://www.prydwen.gg/static/dec7daebd67d260a6cca41705c4615fd/83fe9/stat_atk.png",
+        "scaling": ["ATK: 50%"]
+      }
+    ],
+    "traces": [],
+    "eidolons": [],
+    "buildRecommendation": {
+      "recommendedLightCones": ["Before Dawn", "The Birth of the Self"],
+      "recommendedRelicSets": ["Band of Sizzling Thunder (4)", "Musketeer of Wild Wheat (2)"],
+      "recommendedPlanarOrnaments": ["Space Sealing Station (2)"],
+      "mainStatsPriority": {
+        "Body": ["CRIT Rate", "CRIT DMG"],
+        "Feet": ["SPD", "ATK%"],
+        "Planar Sphere": ["Lightning DMG Boost"],
+        "Link Rope": ["ATK%"]
+      },
+      "subStatsPriority": ["CRIT Rate", "CRIT DMG", "ATK%", "SPD"],
+      "synergisticCharacters": ["Tingyun", "Bronya", "Asta", "Silver Wolf"],
+      "antiSynergisticCharacters": [],
+      "buildNotes": "Jing Yuan's main damage comes from his Lightning-Lord. Focus on increasing its attack count and maximizing CRIT stats."
+    }
+  }
+]

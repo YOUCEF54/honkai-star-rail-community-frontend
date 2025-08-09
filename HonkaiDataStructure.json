@@ -1,0 +1,167 @@
+{   
+    "name": "Character Name",
+    "ascension_data": [
+    {
+      "ascension_phase": "0✦",
+      "levels": [
+        {
+          "level": "1/20",
+          "base_hp": 153,
+          "base_atk": 95,
+          "base_def": 59,
+          "base_spd": 101
+        },
+        {
+          "level": "20/20",
+          "base_hp": 298,
+          "base_atk": 185,
+          "base_def": 115,
+          "base_spd": 101
+        }
+      ],
+      "ascension_costs": [
+        {"item": "Credit", "quantity": 4000},
+        {"item": "Dream Collection Component", "quantity": 5}
+      ]
+    },
+    {
+      "ascension_phase": "1✦",
+      "levels": [
+        {
+          "level": "20/30",
+          "base_hp": 359,
+          "base_atk": 223,
+          "base_def": 139,
+          "base_spd": 101
+        },
+        {
+          "level": "30/30",
+          "base_hp": 436,
+          "base_atk": 270,
+          "base_def": 169,
+          "base_spd": 101
+        }
+      ],
+      "ascension_costs": [
+        {"item": "Credit", "quantity": 8000},
+        {"item": "Dream Collection Component", "quantity": 10}
+      ]
+    },
+    {
+      "ascension_phase": "2✦",
+      "levels": [
+        {
+          "level": "30/40",
+          "base_hp": 497,
+          "base_atk": 308,
+          "base_def": 193,
+          "base_spd": 101
+        },
+        {
+          "level": "40/40",
+          "base_hp": 574,
+          "base_atk": 356,
+          "base_def": 222,
+          "base_spd": 101
+        }
+      ],
+      "ascension_costs": [
+        {"item": "Credit", "quantity": 16000},
+        {"item": "Shape Shifter's Lightning Staff", "quantity": 3},
+        {"item": "Dream Flow Valve", "quantity": 6}
+      ]
+    },
+    {
+      "ascension_phase": "3✦",
+      "levels": [
+        {
+          "level": "40/50",
+          "base_hp": 635,
+          "base_atk": 394,
+          "base_def": 246,
+          "base_spd": 101
+        },
+        {
+          "level": "50/50",
+          "base_hp": 712,
+          "base_atk": 441,
+          "base_def": 276,
+          "base_spd": 101
+        }
+      ],
+      "ascension_costs": [
+        {"item": "Credit", "quantity": 40000},
+        {"item": "Shape Shifter's Lightning Staff", "quantity": 7},
+        {"item": "Dream Flow Valve", "quantity": 9}
+      ]
+    },
+    {
+      "ascension_phase": "4✦",
+      "levels": [
+        {
+          "level": "50/60",
+          "base_hp": 773,
+          "base_atk": 479,
+          "base_def": 299,
+          "base_spd": 101
+        },
+        {
+          "level": "60/60",
+          "base_hp": 849,
+          "base_atk": 527,
+          "base_def": 329,
+          "base_spd": 101
+        }
+      ],
+      "ascension_costs": [
+        {"item": "Credit", "quantity": 80000},
+        {"item": "Shape Shifter's Lightning Staff", "quantity": 20},
+        {"item": "Dream Making Engine", "quantity": 6}
+      ]
+    },
+    {
+      "ascension_phase": "5✦",
+      "levels": [
+        {
+          "level": "60/70",
+          "base_hp": 911,
+          "base_atk": 565,
+          "base_def": 353,
+          "base_spd": 101
+        },
+        {
+          "level": "70/70",
+          "base_hp": 987,
+          "base_atk": 613,
+          "base_def": 383,
+          "base_spd": 101
+        }
+      ],
+      "ascension_costs": [
+        {"item": "Credit", "quantity": 160000},
+        {"item": "Shape Shifter's Lightning Staff", "quantity": 35},
+        {"item": "Dream Making Engine", "quantity": 9}
+      ]
+    },
+    {
+      "ascension_phase": "6✦",
+      "levels": [
+        {
+          "level": "70/80",
+          "base_hp": 1048,
+          "base_atk": 651,
+          "base_def": 406,
+          "base_spd": 101
+        },
+        {
+          "level": "80/80",
+          "base_hp": 1125,
+          "base_atk": 698,
+          "base_def": 436,
+          "base_spd": 101
+        }
+      ],
+      "ascension_costs": []
+    }
+    ],
+}
