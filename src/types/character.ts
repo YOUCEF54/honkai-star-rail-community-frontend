@@ -15,7 +15,7 @@ export interface ICharacter {
 export interface ICharacterBasicInfo {
     name: string;
     slug: string; // Added slug
-    rarity: "4-star" | "5-star"; // Enforce specific values
+    rarity:  "5 Star" | "4 Star"; // Enforce specific values
     path: "Destruction" | "Hunt" | "Harmony" | "Nihility" | "Preservation" | "Abundance" | "Erudition"; // Enforce specific values
     element: "Physical" | "Fire" | "Ice" | "Lightning" | "Wind" | "Quantum" | "Imaginary"; // Enforce specific values
     gender: string;

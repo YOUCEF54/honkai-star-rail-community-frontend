@@ -4,6 +4,7 @@ import { useSidebar } from "../context/sidebar-context";
 import Image from "next/image";
 import { ICharacter } from "@/types/character";
 import Link from "next/link";
+import { Replace } from "lucide-react";
 
 const paths = [
     'Destruction',
@@ -54,7 +55,7 @@ function CharacterCard({ c }: { c: ICharacter }) {
               className="absolute w-full opacity-5 bg-repeat-x bg-contain inset-0 z-0"></div>
       }
         <Image
-          src={c.basicInfo.imagePortraitUrl || `/images/${c.basicInfo.name}.webp`}
+          src={c.basicInfo.imagePortraitUrl || `/images/${c.basicInfo.name.replace("Dan Heng • Imbibitor Lunae","danhengil").replace(".","").replace("March 7th","mar7th").replace("•","").replace(" ","").replace("Trailblazer","trailblazer-destruction-fullbody")}.webp`}
           alt={c.basicInfo.name}
           width={500}
           height={128}
@@ -78,8 +79,8 @@ function CharacterCard({ c }: { c: ICharacter }) {
           {rarityStars}
         </p>
         
-        <div className={`h-1.5 w-full opacity-85 brightness-120 absolute op bottom-0 left-0 ${c.basicInfo.rarity == "5-star" ? "bg-amber-500" : "bg-purple-400/70"} `}/>
-        <div className={`h-full opacity-30 w-full absolute bottom-0 left-0 ${c.basicInfo.rarity == "5-star" ? "bg-gradient-to-b from-transparent to-amber-400/80" : "bg-gradient-to-b from-transparent to-purple-400/70"} `}/>
+        <div className={`h-1.5 w-full opacity-85 brightness-120 absolute op bottom-0 left-0 ${c.basicInfo.rarity == "5 Star" ? " bg-amber-500 " : "bg-purple-400/70"} `}/>
+        <div className={`h-full opacity-30 w-full absolute bottom-0 left-0 ${c.basicInfo.rarity == "5 Star" ? "bg-gradient-to-b from-transparent to-amber-400/80" : "bg-gradient-to-b from-transparent to-purple-400/70"} `}/>
       </div>
      <div className={`absolute flex flex-col max-sm:gap-4 gap-2 top-0 left-0 p-1.5 py-2 z-50 bg-gradient-to-b pb-12 ${c.basicInfo.gender == "male" ? "from-gray-900/80 via-gray-900 via-55% to-transparent":"from-gray-900/60 via-gray-900/70 via-55% to-transparent"}`}>
          <Image
@@ -93,9 +94,11 @@ function CharacterCard({ c }: { c: ICharacter }) {
         height={500}
         alt={c.basicInfo.element}
         className='max-sm:w-8 w-7 shadow-black drop-shadow-lg brightness-150  z-50 left-2  rounded-full top-10'
-        src={(c.basicInfo.path !="Hunt") ? `/Path_${c.basicInfo.path}.webp` : "/Path_The_Hunt.webp"}/>
+        src={(c.basicInfo.path !="The Hunt") ? `/Path_${c.basicInfo.path}.webp` : "/Path_The_Hunt.webp"}/>
      </div>
+     
     </Link>
+
   );
 }
 
@@ -214,7 +217,7 @@ export default function CharactersClient ({
             ))}
           </div>
         }>
-          <CharactersList isExpanded={isExpanded} selectedPath={ selectedPath === "The Hunt" ? "Hunt" : selectedPath} chars={chars} />
+          <CharactersList isExpanded={isExpanded} selectedPath={selectedPath} chars={chars} />
         </Suspense>
         </div>
     {/* </section> */}

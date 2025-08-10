@@ -1,19 +1,15 @@
-'use client'
-import { Suspense } from 'react'
-import LightCone from '../../components/Ticket3D'
-import { Canvas } from '@react-three/fiber'
+import { StarRail } from "starrail.js";
+const client = new StarRail();
 
-function App() {
+client.fetchUser(800069903).then(user => {
+  console.log(user);
+});
+
+export default function TicketPage() {
   return (
-    <div style={{ width: '100vw', height: '100vh' }}>
-        {/* <Canvas> */}
-
-      <Suspense fallback={"Loading..."}>
-        <LightCone />
-      </Suspense>
-        {/* </Canvas> */}
+    <div>
+      <h1>Ticket Page</h1>
+      <p>This page is for managing tickets.</p>
     </div>
-  )
+  );
 }
-
-export default App
