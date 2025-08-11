@@ -1,0 +1,219 @@
+{
+  "id": 1001,
+  "name": "March 7th",
+  "stars": 4,
+  "path": "Preservation",
+  "combatType": "Ice",
+  "maxEnergy": 120,
+  "story": {
+    "text": "A girl who once slumbered in eternal ice and knows nothing about her past.\\nTo find out the truth about her origins, she decided to travel with the Astral Express.\\nAs of right now, she has prepared about <unbreak>67</unbreak> different versions of her life story for herself."
+  },
+  "age": null,
+  "gender": null,
+  "origin": null,
+  "birthday": null,
+  "icon": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1001.png",
+  "sideIcon": "https://enka.network/ui/hsr/SpriteOutput/AvatarRoundIcon/Avatar/1001.png",
+  "miniIcon": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarminiicon/1001.png",
+  "teamActionIcon": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatariconteam/1001B.png",
+  "teamWaitingIcon": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatariconteam/1001.png",
+  "shopItemIcon": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarshopicon/avatar/1001.png",
+  "portrait": null,
+  "fullImage": null,
+  "splashImage": "https://enka.network/ui/hsr/SpriteOutput/AvatarDrawCard/1001.png",
+  "splashCutInFigureImage": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarcutinfigures/1001.png",
+  "splashCutInBackgroundImage": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarcutinbg/1001.png",
+  "skills": [
+    {
+      "id": 100101,
+      "name": "Frigid Cold Arrow",
+      "type": null,
+      "description": null,
+      "icon": null
+    },
+    {
+      "id": 100102,
+      "name": "The Power of Cuteness",
+      "type": null,
+      "description": null,
+      "icon": null
+    },
+    {
+      "id": 100103,
+      "name": "Glacial Cascade",
+      "type": null,
+      "description": null,
+      "icon": null
+    },
+    {
+      "id": 100104,
+      "name": "Girl Power",
+      "type": null,
+      "description": null,
+      "icon": null
+    },
+    {
+      "id": 100106,
+      "name": "Attack",
+      "type": null,
+      "description": null,
+      "icon": null
+    },
+    {
+      "id": 100107,
+      "name": "Freezing Beauty",
+      "type": null,
+      "description": null,
+      "icon": null
+    }
+  ],
+  "eidolons": [
+    {
+      "id": 100101,
+      "name": "Memory of You",
+      "description": "Every time March 7th's Ultimate Freezes a target, she regenerates <unbreak>#1[i]</unbreak> Energy.",
+      "icon": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Rank1.png"
+    },
+    {
+      "id": 100102,
+      "name": "Memory of It",
+      "description": "Upon entering battle, grants a Shield equal to <unbreak>#1[i]%</unbreak> of March 7th's DEF plus <unbreak>#3[i]</unbreak> to the ally with the lowest HP percentage, lasting for <unbreak>#2[i]</unbreak> turn(s).",
+      "icon": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Rank2.png"
+    },
+    {
+      "id": 100103,
+      "name": "Memory of Everything",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nBasic ATK Lv. +1, up to a maximum of Lv. <unbreak>10</unbreak>.",
+      "icon": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Ultra.png"
+    },
+    {
+      "id": 100104,
+      "name": "Never Forfeit Again",
+      "description": "The Talent's <u>Counter</u> effect can be triggered 1 more time in each turn. The DMG dealt by <u>Counter</u> increases by an amount that is equal to <unbreak>#1[i]%</unbreak> of March 7th's DEF.",
+      "icon": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Rank4.png"
+    },
+    {
+      "id": 100105,
+      "name": "Never Forget Again",
+      "description": "Skill Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.\\nTalent Lv. +2, up to a maximum of Lv. <unbreak>15</unbreak>.",
+      "icon": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/skillicons/avatar/1001/SkillIcon_1001_BP.png"
+    },
+    {
+      "id": 100106,
+      "name": "Just Like This, Always...",
+      "description": "Allies under the protection of the Shield granted by the Skill restore HP equal to <unbreak>#1[i]%</unbreak> of their Max HP plus <unbreak>#2[i]</unbreak> at the beginning of each turn.",
+      "icon": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Rank6.png"
+    }
+  ],
+  "skillTreeNodes": [
+    {
+      "id": 1001001,
+      "name": "Frigid Cold Arrow",
+      "icon": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Normal.png",
+      "isUnlockedByDefault": true
+    },
+    {
+      "id": 1001002,
+      "name": "The Power of Cuteness",
+      "icon": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/skillicons/avatar/1001/SkillIcon_1001_BP.png",
+      "isUnlockedByDefault": true
+    },
+    {
+      "id": 1001003,
+      "name": "Glacial Cascade",
+      "icon": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Ultra.png",
+      "isUnlockedByDefault": true
+    },
+    {
+      "id": 1001004,
+      "name": "Girl Power",
+      "icon": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Passive.png",
+      "isUnlockedByDefault": true
+    },
+    {
+      "id": 1001007,
+      "name": "Freezing Beauty",
+      "icon": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/skillicons/avatar/1001/SkillIcon_1001_Maze.png",
+      "isUnlockedByDefault": true
+    },
+    {
+      "id": 1001101,
+      "name": "Purify",
+      "icon": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/skillicons/avatar/1001/SkillIcon_1001_SkillTree1.png",
+      "isUnlockedByDefault": false
+    },
+    {
+      "id": 1001102,
+      "name": "Reinforce",
+      "icon": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/skillicons/avatar/1001/SkillIcon_1001_SkillTree2.png",
+      "isUnlockedByDefault": false
+    },
+    {
+      "id": 1001103,
+      "name": "Ice Spell",
+      "icon": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/skillicons/avatar/1001/SkillIcon_1001_SkillTree3.png",
+      "isUnlockedByDefault": false
+    },
+    {
+      "id": 1001201,
+      "name": "DMG Boost: Ice",
+      "icon": "https://enka.network/ui/hsr/SpriteOutput/UI/Avatar/Icon/IconIceAddedRatio.png",
+      "isUnlockedByDefault": false
+    },
+    {
+      "id": 1001202,
+      "name": "DEF Boost",
+      "icon": "https://enka.network/ui/hsr/SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+      "isUnlockedByDefault": false
+    },
+    {
+      "id": 1001203,
+      "name": "DMG Boost: Ice",
+      "icon": "https://enka.network/ui/hsr/SpriteOutput/UI/Avatar/Icon/IconIceAddedRatio.png",
+      "isUnlockedByDefault": false
+    },
+    {
+      "id": 1001204,
+      "name": "Effect RES Boost",
+      "icon": "https://enka.network/ui/hsr/SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+      "isUnlockedByDefault": false
+    },
+    {
+      "id": 1001205,
+      "name": "DMG Boost: Ice",
+      "icon": "https://enka.network/ui/hsr/SpriteOutput/UI/Avatar/Icon/IconIceAddedRatio.png",
+      "isUnlockedByDefault": false
+    },
+    {
+      "id": 1001206,
+      "name": "Effect RES Boost",
+      "icon": "https://enka.network/ui/hsr/SpriteOutput/UI/Avatar/Icon/IconStatusResistance.png",
+      "isUnlockedByDefault": false
+    },
+    {
+      "id": 1001207,
+      "name": "DEF Boost",
+      "icon": "https://enka.network/ui/hsr/SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+      "isUnlockedByDefault": false
+    },
+    {
+      "id": 1001208,
+      "name": "DMG Boost: Ice",
+      "icon": "https://enka.network/ui/hsr/SpriteOutput/UI/Avatar/Icon/IconIceAddedRatio.png",
+      "isUnlockedByDefault": false
+    },
+    {
+      "id": 1001209,
+      "name": "DMG Boost: Ice",
+      "icon": "https://enka.network/ui/hsr/SpriteOutput/UI/Avatar/Icon/IconIceAddedRatio.png",
+      "isUnlockedByDefault": false
+    },
+    {
+      "id": 1001210,
+      "name": "DEF Boost",
+      "icon": "https://enka.network/ui/hsr/SpriteOutput/UI/Avatar/Icon/IconDefence.png",
+      "isUnlockedByDefault": false
+    }
+  ],
+  "lightcones": []
+}
