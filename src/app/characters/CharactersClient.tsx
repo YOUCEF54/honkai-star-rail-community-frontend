@@ -30,12 +30,12 @@ function CharacterCardSkeleton() {
 }
 
 function CharacterCard({ c }: { c: ICharacter }) {
-  const rarityStars = Array.from({ length: parseInt(c.basicInfo.rarity.charAt(0)) }).map((_, i) => (
+  const rarityStars = Array.from({ length: c.stars }).map((_, i) => (
     <span key={i} className="text-amber-400">★</span>
   ));
 
   // Normalize the character name for the URL slug
-  const characterSlug = c.basicInfo.name.toLowerCase().replace(/\s+/g, '-');
+  const characterSlug = c?.name?.toLowerCase().replace(/\s+/g, '-');
 
   return (
     <Link
@@ -54,47 +54,47 @@ function CharacterCard({ c }: { c: ICharacter }) {
               style={{backgroundImage:"url(https://cdn.starrailstation.com/assets/ebf11e773e416a832bbe26a06d07a3046e976e7bf9892574e5966cbdb6864833.webp)"}}
               className="absolute w-full opacity-5 bg-repeat-x bg-contain inset-0 z-0"></div>
       }
+        {/* <Image
+          src={c.icon || `/images/${c?.name?.replace("Dan Heng • Imbibitor Lunae","danhengil").replace(".","").replace("March 7th","mar7th").replace("•","").replace(" ","").replace("Trailblazer","trailblazer-destruction-fullbody")}.webp`}
+          alt={c.name}
+          width={256}
+          height={128}
+          className={`bg-no-repeat zoom-in-75 ${"male" == "male" ?"":"blur-sm"}l top-0 absolute  bg-center bg-cover z-50 w-full shadow-lg`}
+        /> */}
+      <div className='z-10 relative w-full   sm:min-h-58'>
         <Image
-          src={c.basicInfo.imagePortraitUrl || `/images/${c.basicInfo.name.replace("Dan Heng • Imbibitor Lunae","danhengil").replace(".","").replace("March 7th","mar7th").replace("•","").replace(" ","").replace("Trailblazer","trailblazer-destruction-fullbody")}.webp`}
-          alt={c.basicInfo.name}
+          src={c.shopItemIcon || `/images/${c.name}.webp`}
+          alt={c.name}
           width={500}
           height={128}
-          className={`bg-no-repeat zoom-in-75 ${c.basicInfo.gender == "male" ?"":"blur-sm"}l top-0 absolute  bg-center bg-cover z-50 w-full shadow-lg`}
-        />
-      <div className='z-10 relative w-full sm:min-h-58'>
-        <Image
-          src={c.basicInfo.imagePortraitUrl || `/images/${c.basicInfo.name}.webp`}
-          alt={c.basicInfo.name}
-          width={500}
-          height={128}
-          className={`bg-no-repeat zoom-in-75 ${c.basicInfo.gender == "male" ?"":"blur-md"} opacity-20 bg-center bg-cover z-40 w-full shadow-lg`}
+          className={`bg-no-repeat  ${"male" == "male" ?"":"blur-md"}l opacity-20l bg-bottom bg-cover z-40 w-full shadow-lg`}
         />
       </div>
       <div className="z-50 absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-b from-transparent via-black/30 to-black/50">
-        <h2 className="text-xl font-bold text-white  text-shadow-md text-shadow-black mb-1">{c.basicInfo.name}</h2>
+        <h2 className="text-xl font-bold text-white  text-shadow-md text-shadow-black mb-1">{c.name}</h2>
         <p className="text-sm text-nowrap text-gray-300 mb-1 text-shadow-2xs text-shadow-black">
-          {c.basicInfo.element} • {c.basicInfo.path}
+          {c.combatType} • {c.path}
         </p>
         <p className="mt-1 text-lg">
           {rarityStars}
         </p>
         
-        <div className={`h-1.5 w-full opacity-85 brightness-120 absolute op bottom-0 left-0 ${c.basicInfo.rarity == "5 Star" ? " bg-amber-500 " : "bg-purple-400/70"} `}/>
-        <div className={`h-full opacity-30 w-full absolute bottom-0 left-0 ${c.basicInfo.rarity == "5 Star" ? "bg-gradient-to-b from-transparent to-amber-400/80" : "bg-gradient-to-b from-transparent to-purple-400/70"} `}/>
+        <div className={`h-1.5 w-full opacity-85 brightness-120 absolute op bottom-0 left-0 ${c.stars == 5 ? " bg-amber-500 " : "bg-purple-400/70"} `}/>
+        <div className={`h-full opacity-30 w-full absolute bottom-0 left-0 ${c.stars == 5 ? "bg-gradient-to-b from-transparent to-amber-400/80" : "bg-gradient-to-b from-transparent to-purple-400/70"} `}/>
       </div>
-     <div className={`absolute flex flex-col max-sm:gap-4 gap-2 top-0 left-0 p-1.5 py-2 z-50 bg-gradient-to-b pb-12 ${c.basicInfo.gender == "male" ? "from-gray-900/80 via-gray-900 via-55% to-transparent":"from-gray-900/60 via-gray-900/70 via-55% to-transparent"}`}>
+     <div className={`absolute flex flex-col max-sm:gap-4 gap-2 top-0 left-0 p-1.5 py-2 z-50 bg-gradient-to-b pb-12 ${"male" == "male" ? "from-gray-900/80 via-gray-900 via-55% to-transparent":"from-gray-900/60 via-gray-900/70 via-55% to-transparent"}`}>
          <Image
         width={500}
         height={500}
-        alt={c.basicInfo.element}
+        alt={c.combatType}
         className='max-sm:w-8 w-7  z-50 left-2 top-2'
-        src={`/Type_${c.basicInfo.element}.webp`}/>
+        src={`/Type_${c.combatType}.webp`}/>
       <Image
         width={500}
         height={500}
-        alt={c.basicInfo.element}
+        alt={c.combatType}
         className='max-sm:w-8 w-7 shadow-black drop-shadow-lg brightness-150  z-50 left-2  rounded-full top-10'
-        src={(c.basicInfo.path !="The Hunt") ? `/Path_${c.basicInfo.path}.webp` : "/Path_The_Hunt.webp"}/>
+        src={(c.path !="The Hunt") ? `/Path_${c.path}.webp` : "/Path_The_Hunt.webp"}/>
      </div>
      
     </Link>
@@ -108,7 +108,7 @@ function CharactersList({ isExpanded, chars, selectedPath }: {isExpanded : boole
   
     const filteredChars = selectedPath === "All"
     ? chars
-    : chars.filter((c) => c.basicInfo.path === selectedPath);
+    : chars.filter((c) => c.path === selectedPath);
 
   return (
     <div className={`grid gap-6 sm:grid-cols-2 md:grid-cols-3 w-full xl:w-full  ${isExpanded ? "xl:grid-cols-5 lg:grid-cols-4":"lg:grid-cols-3 xl:grid-cols-4"} 2xl:grid-cols-5`}>

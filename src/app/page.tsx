@@ -101,7 +101,7 @@ export default async function HomePage() {
     <LinkCard
       title="Characters"
       description="Browse builds & stats"
-      href="/characters-test"
+      href="/characters"
       src="/hsr_ch.avif"
       position="left"
     />

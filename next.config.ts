@@ -1,25 +1,6 @@
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   reactStrictMode: true,
-//   async rewrites() {
-//     return [
-//       {
-//         source: '/api/:path*',
-//         destination: 'http://localhost:8080/:path*', // Spring Boot API
-//       },
-//       {
-//         source: '/images/:path*',
-//         destination: 'http://localhost:8080/images/:path*', // Proxy image requests to Spring
-//       },
-//     ];
-//   },
-// };
-
-// module.exports = nextConfig;
-
 /** @type {import('next').NextConfig} */
-/** @type {import('tailwindcss').Config} */
 const nextConfig = {
+  // Add any other Next.js configurations you might have here
   async rewrites() {
     return [
       {
@@ -33,6 +14,7 @@ const nextConfig = {
     ];
   },
   images: {
+    // Whitelist external domains for the Next.js Image component.
     remotePatterns: [
       {
         protocol: 'https',
@@ -46,18 +28,31 @@ const nextConfig = {
         port: '',
         pathname: '/static/**',
       },
+      // === ADDED FOR HSR ASSETS ===
+      {
+        protocol: 'https',
+        hostname: 'raw.githubusercontent.com',
+        port: '',
+        pathname: '/FortOfFans/HSR/**',
+      },
+      // === ADDED FOR ENKA.NETWORK ASSETS ===
+      {
+        protocol: 'https',
+        hostname: 'enka.network',
+        port: '',
+        pathname: '/ui/hsr/**',
+      },
     ],
   },
-  theme: {
-    extend: {
-      clipPath: {
-        'card-left': 'polygon(0 0, 85% 0, 100% 100%, 0 100%)',
-        'card-middle': 'polygon(15% 0, 85% 0, 100% 100%, 0 100%)',
-        'card-right': 'polygon(0 0, 100% 0, 100% 100%, 15% 100%)',
-      },
-    },
-  },
-  // Add any other Next.js configurations you might have here
+  // theme: {
+  //   extend: {
+  //     clipPath: {
+  //       'card-left': 'polygon(0 0, 85% 0, 100% 100%, 0 100%)',
+  //       'card-middle': 'polygon(15% 0, 85% 0, 100% 100%, 0 100%)',
+  //       'card-right': 'polygon(0 0, 100% 0, 100% 100%, 15% 100%)',
+  //     },
+  //   },
+  // },
 };
 
 module.exports = nextConfig;
